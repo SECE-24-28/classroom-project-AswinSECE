@@ -1,0 +1,90 @@
+body{
+    background-color: brown;
+
+}
+
+#c1{
+    content:"The background is red";
+    color:white;
+    font-size:40px;
+}
+
+/*
+xs -480px-small phones
+sm - 765px -tablets
+md - 1024px -small laptops
+lg - 1280px -desktops
+xl - 1440px -bigger monitors
+
+*/
+
+/* @media print and (min-resolution:400px){
+
+}
+
+@media (min-aspect-ratio:16/9){
+
+} */
+
+
+@media screen and (min-width:480px) and (max-width:764px) and (orientation: landscape){ /* portrait or landscape*/
+body{
+        background-color: lightblue;
+    }
+
+    #c1::after{
+    content:"This is a mobile";
+    color:white;
+    font-size:40px;
+}
+}
+
+
+@media screen and (min-width:765px){
+    body{
+        background-color: rgb(152, 206, 25);
+    }
+
+    #c1::after{
+    content:"This is a tablet";
+    color:white;
+    font-size:40px;
+}
+}
+
+@media screen and (min-width:1024px){
+    body{
+        background-color: rgb(32, 17, 243);
+    }
+
+    #c1::after{
+    content:"This is laptop";
+    color:white;
+    font-size:40px;
+}
+}
+
+@media screen and (min-width:1280px){
+    body{
+        background-color: rgb(191, 22, 157);
+    }
+
+    #c1::after{
+    content:"This is small desktop";
+    color:white;
+    font-size:40px;
+}
+}
+
+@media screen and (min-width:1440px){
+    body{
+        background-color: black;
+        ;
+    }
+
+    #c1::after{
+    content:"This is large desktop";
+    color:white;
+    font-size:40px;
+}
+}
