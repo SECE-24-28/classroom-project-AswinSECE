@@ -1,0 +1,17 @@
+.box{
+    height:80px;
+    width:80px;
+    color: aqua;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color:blue;
+}
+
+.green{
+    background-color: green;
+}
